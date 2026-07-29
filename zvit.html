@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="uk"><head>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%231f7a4d%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-size=%2716%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27sans-serif%27 font-weight=%27bold%27%3E%D0%97%3C/text%3E%3C/svg%3E">
+<meta name="robots" content="noindex,nofollow"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ЗемРадар — звіт по портфелю</title>
+<style>
+ *{box-sizing:border-box}
+ body{margin:0;font-family:system-ui,"Segoe UI",Roboto,Arial,sans-serif;color:#18232c;background:#eef1f5;line-height:1.5}
+ .wrap{max-width:1000px;margin:0 auto;padding:0 16px 60px}
+ header{background:linear-gradient(135deg,#1f7a4d,#155c39);color:#fff;padding:26px 22px;border-radius:0 0 20px 20px}
+ header h1{margin:0;font-size:23px} header p{margin:6px 0 0;opacity:.9;font-size:13.5px}
+ .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+ .kpi{background:#fff;border:1px solid #e7ebf0;border-radius:14px;padding:14px 16px}
+ .kpi .v{font-size:22px;font-weight:800;letter-spacing:-.01em} .kpi .l{color:#6a7581;font-size:12px;margin-top:3px}
+ .kpi.g .v{color:#1e7a3a} .kpi.y .v{color:#8a6414} .kpi.b .v{color:#155c39}
+ .card{background:#fff;border:1px solid #e7ebf0;border-radius:16px;padding:18px 20px;margin:14px 0}
+ .card h2{margin:0 0 12px;font-size:16px} .card h2 .s{font-weight:500;color:#6a7581;font-size:12.5px}
+ table{width:100%;border-collapse:collapse;font-size:13px}
+ th,td{padding:7px 9px;border-bottom:1px solid #eef1f5;text-align:left;vertical-align:top}
+ th{color:#6a7581;font-size:11px;text-transform:uppercase;letter-spacing:.04em;font-weight:700}
+ td.r,th.r{text-align:right;white-space:nowrap} td.mono{font-family:ui-monospace,Consolas,monospace;font-size:12px}
+ td.pos{color:#1e7a3a;font-weight:700}
+ .tag{display:inline-block;background:#fdeede;color:#8a4b12;border-radius:20px;padding:1px 8px;font-size:11px}
+ .bar{display:flex;height:26px;border-radius:8px;overflow:hidden;margin:6px 0 10px;font-size:12px;font-weight:700;color:#fff}
+ .bar .s{background:#1f7a4d;display:flex;align-items:center;justify-content:center}
+ .bar .h{background:#d98a15} .bar .l{background:#8b94a3}
+ ul{margin:6px 0 0;padding-left:20px} li{margin:5px 0;font-size:13.5px}
+ .muted{color:#6a7581;font-size:12.5px} b.hl{color:#155c39}
+ .note{background:#f6f8fa;border-left:3px solid #1f7a4d;padding:10px 13px;border-radius:8px;font-size:13px;margin-top:8px}
+ .warn{background:#fdeede;border-left:3px solid #d98a15;padding:10px 13px;border-radius:8px;font-size:13px}
+ .printbtn{position:fixed;top:14px;right:14px;background:#fff;border:1px solid #ccd;border-radius:10px;padding:8px 14px;
+   font-weight:700;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.15);font-size:13px;z-index:9}
+ @media print{.printbtn{display:none} body{background:#fff} header{border-radius:0}}
+</style></head><body>
+<button class="printbtn" onclick="window.print()">🖨 Друк / PDF</button>
+<header><div class="wrap" style="padding-bottom:0">
+  <h1>ЗемРадар — звіт по портфелю</h1>
+  <p>Аналіз «продавати / тримати» по куплених ділянках · оцінка за завершеними продажами сусідів (Prozorro.Продажі) · станом на 2026-07-25</p>
+</div></header>
+<div class="wrap">
+
+ <div class="kpis">
+   <div class="kpi"><div class="v">101</div><div class="l">куплених ділянок</div></div>
+   <div class="kpi b"><div class="v">13 603 450 ₴</div><div class="l">вкладено всього (ціна покупки)</div></div>
+   <div class="kpi g"><div class="v">22 106 802 ₴</div><div class="l">ринкова оцінка (95 з 101 оцінених)</div></div>
+   <div class="kpi g"><div class="v">8 538 352 ₴</div><div class="l">потенційний приріст (по оцінених)</div></div>
+ </div>
+
+ <div class="card">
+   <h2>Вердикти</h2>
+   <div class="bar">
+     <div class="s" style="flex:76">76 продавати</div>
+     <div class="h" style="flex:19">19 тримати</div>
+     <div class="l" style="flex:2">2 мало даних</div>
+   </div>
+   <div class="muted">«Мало даних» = менше 3 добровільних продажів сусідів, тому чесно не даємо вердикт; ще 4 — без ціни покупки в таблиці.</div>
+ </div>
+
+ <div class="card">
+   <h2>Продати першими <span class="s">· топ-15 за прибутком у гривнях</span></h2>
+   <table><thead><tr><th>#</th><th>Кадастровий номер</th><th>Область</th><th class="r">Площа</th>
+     <th class="r">Купівля</th><th class="r">Ринок</th><th class="r">Прибуток</th><th>Покупець (переважне право)</th></tr></thead>
+     <tbody><tr><td>1</td><td class='mono'>6123484100:01:001:0042</td><td>Тернопільська</td><td class='r'>3.7031</td><td class='r'>358 000 ₴</td><td class='r'>693 944 ₴</td><td class='r pos'>335 944 ₴ +94%</td><td></td></tr><tr><td>2</td><td class='mono'>6123483800:01:001:0052</td><td>Тернопільська</td><td class='r'>2.0219</td><td class='r'>56 100 ₴</td><td class='r'>378 895 ₴</td><td class='r pos'>322 795 ₴ +575%</td><td></td></tr><tr><td>3</td><td class='mono'>6123483800:01:001:0053</td><td>Тернопільська</td><td class='r'>2.0218</td><td class='r'>56 100 ₴</td><td class='r'>378 876 ₴</td><td class='r pos'>322 776 ₴ +575%</td><td></td></tr><tr><td>4</td><td class='mono'>3222282800:05:308:0013</td><td>Київська</td><td class='r'>1.45</td><td class='r'>30 000 ₴</td><td class='r'>322 283 ₴</td><td class='r pos'>292 283 ₴ +974%</td><td></td></tr><tr><td>5</td><td class='mono'>3222284400:04:301:0054</td><td>Київська</td><td class='r'>2.0</td><td class='r'>30 000 ₴</td><td class='r'>318 000 ₴</td><td class='r pos'>288 000 ₴ +960%</td><td></td></tr><tr><td>6</td><td class='mono'>6825584600:07:005:0077</td><td>Хмельницька</td><td class='r'>2.684</td><td class='r'>194 700 ₴</td><td class='r'>477 817 ₴</td><td class='r pos'>283 117 ₴ +145%</td><td></td></tr><tr><td>7</td><td class='mono'>6823384000:03:001:0339</td><td>Хмельницька</td><td class='r'>2.6067</td><td class='r'>184 500 ₴</td><td class='r'>464 055 ₴</td><td class='r pos'>279 555 ₴ +152%</td><td></td></tr><tr><td>8</td><td class='mono'>6822489500:06:010:0220</td><td>Хмельницька</td><td class='r'>2.1</td><td class='r'>162 000 ₴</td><td class='r'>373 851 ₴</td><td class='r pos'>211 851 ₴ +131%</td><td></td></tr><tr><td>9</td><td class='mono'>3222282800:05:316:0018</td><td>Київська</td><td class='r'>1.246</td><td class='r'>76 300 ₴</td><td class='r'>276 941 ₴</td><td class='r pos'>200 641 ₴ +263%</td><td></td></tr><tr><td>10</td><td class='mono'>3222284400:05:301:0021</td><td>Київська</td><td class='r'>2.0027</td><td class='r'>118 600 ₴</td><td class='r'>318 429 ₴</td><td class='r pos'>199 829 ₴ +168%</td><td></td></tr><tr><td>11</td><td class='mono'>6124281200:01:001:0107</td><td>Тернопільська</td><td class='r'>2.9794</td><td class='r'>367 000 ₴</td><td class='r'>558 326 ₴</td><td class='r pos'>191 326 ₴ +52%</td><td></td></tr><tr><td>12</td><td class='mono'>6823388500:06:001:0314</td><td>Хмельницька</td><td class='r'>1.5727</td><td class='r'>117 000 ₴</td><td class='r'>279 979 ₴</td><td class='r pos'>162 979 ₴ +139%</td><td></td></tr><tr><td>13</td><td class='mono'>6822182200:06:025:0055</td><td>Хмельницька</td><td class='r'>2.146</td><td class='r'>220 001 ₴</td><td class='r'>382 040 ₴</td><td class='r pos'>162 039 ₴ +74%</td><td></td></tr><tr><td>14</td><td class='mono'>6123080400:01:001:0167</td><td>Тернопільська</td><td class='r'>2.1062</td><td class='r'>236 000 ₴</td><td class='r'>394 692 ₴</td><td class='r pos'>158 692 ₴ +67%</td><td>Контінентал <span class="tag">оренда до 2043</span></td></tr><tr><td>15</td><td class='mono'>6122087000:01:001:0345</td><td>Тернопільська</td><td class='r'>1.4188</td><td class='r'>112 770 ₴</td><td class='r'>265 877 ₴</td><td class='r pos'>153 107 ₴ +136%</td><td></td></tr></tbody></table>
+   <div class="note">Кандидати на продаж всього: <b class="hl">76</b>. Вкладено в них 10 261 737 ₴, ринкова оцінка (стеля виторгу) <b class="hl">18 701 168 ₴</b> → потенційний прибуток <b class="hl">8 439 431 ₴</b>.</div>
+ </div>
+
+ <div class="card">
+   <h2>Оренда і переважне право <span class="s">· кого важко продати стороннім</span></h2>
+   <p class="muted">Ці ділянки в довгій оренді у агрохолдингів — реальний покупець це <b>орендар</b> (у нього переважне право викупу). Холдинги-орендарі: <b>Контінентал — 5, МХП — 4</b>.</p>
+   <table><thead><tr><th>Кадастровий номер</th><th>Область</th><th>Орендар</th><th class="r">Оренда до</th><th class="r">Ринок</th></tr></thead>
+     <tbody><tr><td class='mono'>6123080400:01:001:0167</td><td>Тернопільська</td><td>Контінентал</td><td class='r'>2043</td><td class='r'>394 692 ₴</td></tr><tr><td class='mono'>6123080200:01:001:0307</td><td>Тернопільська</td><td>Контінентал</td><td class='r'>2039</td><td class='r'>324 531 ₴</td></tr><tr><td class='mono'>6120885700:01:001:0183</td><td>Тернопільська</td><td>Контінентал</td><td class='r'>2039</td><td class='r'>219 646 ₴</td></tr><tr><td class='mono'>6121681000:01:001:0338</td><td>Тернопільська</td><td>Контінентал</td><td class='r'>2037</td><td class='r'>406 966 ₴</td></tr><tr><td class='mono'>2621285800:05:001:0673</td><td>Івано-Франківська</td><td>ФЕРМЕРСЬКЕ ГОСПОДАРСТВО &quot;ВОЗНЯК ІГОР МИКОЛАЙОВИЧ</td><td class='r'>2036</td><td class='r'>290 459 ₴</td></tr><tr><td class='mono'>6124885800:01:001:0206</td><td>Тернопільська</td><td>ТОВ &quot;Агрокомпанія Прикарпаття</td><td class='r'>2035</td><td class='r'>215 505 ₴</td></tr><tr><td class='mono'>6124885800:01:001:0568</td><td>Тернопільська</td><td>ТОВ &quot;Агрокомпанія Прикарпаття</td><td class='r'>2034</td><td class='r'>206 135 ₴</td></tr><tr><td class='mono'>6124883400:01:001:0241</td><td>Тернопільська</td><td>ТОВ &quot;Агрокомпанія Прикарпаття</td><td class='r'>2034</td><td class='r'>189 063 ₴</td></tr><tr><td class='mono'>6124885800:01:001:0207</td><td>Тернопільська</td><td>ТОВ &quot;Агрокомпанія Прикарпаття</td><td class='r'>2034</td><td class='r'>217 360 ₴</td></tr></tbody></table>
+ </div>
+
+ <div class="card">
+   <h2>По областях</h2>
+   <table><thead><tr><th>Область</th><th class="r">Ділянок</th><th class="r">Вкладено</th><th class="r">Ринок</th></tr></thead>
+     <tbody><tr><td>Тернопільська</td><td class='r'>41</td><td class='r'>6 997 110 ₴</td><td class='r'>10 444 427 ₴</td></tr><tr><td>Хмельницька</td><td class='r'>23</td><td class='r'>3 303 325 ₴</td><td class='r'>6 158 460 ₴</td></tr><tr><td>Івано-Франківська</td><td class='r'>20</td><td class='r'>1 797 914 ₴</td><td class='r'>2 344 760 ₴</td></tr><tr><td>Київська</td><td class='r'>7</td><td class='r'>254 900 ₴</td><td class='r'>1 235 653 ₴</td></tr><tr><td>Львівська</td><td class='r'>4</td><td class='r'>616 001 ₴</td><td class='r'>982 834 ₴</td></tr><tr><td>Чернівецька</td><td class='r'>4</td><td class='r'>599 200 ₴</td><td class='r'>940 668 ₴</td></tr><tr><td>—</td><td class='r'>2</td><td class='r'>0 ₴</td><td class='r'>0 ₴</td></tr></tbody></table>
+ </div>
+
+ <div class="card">
+   <h2>Як рахували (методика)</h2>
+   <ul>
+     <li><b>Ринок</b> = медіана грн/га <b>добровільних</b> завершених продажів сусідів × наша площа. Кола сусідів: той самий квартал → сільрада → область; беремо найтісніше з ≥3 продажами.</li>
+     <li><b>Арештовані</b> продажі в медіану ринку не входять (вони системно занижують ціну).</li>
+     <li><b>Прибуток</b> = ринок − ціна покупки. Другий метод (за НГО) — для перехресної перевірки; де методи розходяться &gt;25%, це позначено у детальному xlsx.</li>
+     <li><b>Вердикт</b>: прибуток ≥ +20% → продавати; інакше тримати; &lt;3 продажів сусідів → мало даних.</li>
+   </ul>
+ </div>
+
+ <div class="card">
+   <h2>Застереження (чесно)</h2>
+   <div class="warn">
+     <ul style="margin:0">
+       <li>Великі «+прибутки» — це <b>арбітраж</b>: ділянки куплені дешево на <b>арештованих</b> торгах, а ринок рахуємо за добровільними продажами. Це <b>стеля</b>: щоб її отримати, потрібні чистий титул і покупець.</li>
+       <li>Позиція ділянок на карті <b>приблизна</b> (центроїд сусідів) — точних меж ДЗК публічно немає.</li>
+       <li>Прибуток — до податків і витрат на продаж.</li>
+       <li>Дані продажів охоплюють період з лютого 2025 по серпень 2026.</li>
+     </ul>
+   </div>
+ </div>
+
+ <div class="card">
+   <h2>Дані звірено</h2>
+   <p class="muted">Звірено з таблицею аукціонів (reconcile.py від 2026-07-25): перевірено 106 ділянок, розбіжностей <b>0</b>. Дублікатів к/н у джерелі — <b>1</b> (та сама ділянка двічі в таблиці; у розрахунок береться один рядок, на суми не впливає). Детально — у <b>ЗемРадар-портфель.xlsx</b> (5 аркушів) і на карті <b>ЗемРадар-карта.html</b> (шар «Мій портфель»).</p>
+ </div>
+
+ <p class="muted" style="text-align:center;margin-top:22px">Згенеровано ЗемРадар · 2026-07-25</p>
+</div></body></html>
